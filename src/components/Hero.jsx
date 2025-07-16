@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaTelegramPlane, FaEnvelope, FaPhone } from "react-icons/fa";
-import avatarImg from "../assets/movies.png";
+import avatarImg from "../assets/user1.jpg";
 
 const textVariant = {
   hidden: { opacity: 0, y: 40 },
@@ -11,9 +11,7 @@ const textVariant = {
 
 const Hero = () => {
   return (
-    <section
-      className="flex flex-col justify-center items-center min-h-screen text-center px-4"
-    >
+    <section className="flex flex-col justify-center items-center min-h-screen text-center px-4">
       <div className="flex flex-col items-center flex-grow justify-center w-full">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -45,20 +43,34 @@ const Hero = () => {
         >
           Front-end Developer
         </motion.h2>
-     
+
         <motion.div
           className="flex gap-4 justify-center mb-10 z-10"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.6, duration: 0.5 }}
         >
-          <a href="tel:+998772540945" className="bg-[#e6f0fa] hover:bg-[#c3e0f7] text-black p-3 rounded-full shadow-md transition-all" title="Phone">
+          <a
+            href="tel:+998772540945"
+            className="bg-[#e6f0fa] hover:bg-[#c3e0f7] text-black p-3 rounded-full shadow-md transition-all"
+            title="Phone"
+          >
             <FaPhone size={22} />
           </a>
-          <a href="mailto:javohirxolboyev0232@gmail.com" className="bg-[#e6f0fa] hover:bg-[#c3e0f7] text-black p-3 rounded-full shadow-md transition-all" title="Email">
+          <a
+            href="mailto:javohirxolboyev0232@gmail.com"
+            className="bg-[#e6f0fa] hover:bg-[#c3e0f7] text-black p-3 rounded-full shadow-md transition-all"
+            title="Email"
+          >
             <FaEnvelope size={22} />
           </a>
-          <a href="https://t.me/xolboyev00" target="_blank" rel="noopener noreferrer" className="bg-[#e6f0fa] hover:bg-[#c3e0f7] text-black p-3 rounded-full shadow-md transition-all" title="Telegram">
+          <a
+            href="https://t.me/xolboyev00"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#e6f0fa] hover:bg-[#c3e0f7] text-black p-3 rounded-full shadow-md transition-all"
+            title="Telegram"
+          >
             <FaTelegramPlane size={22} />
           </a>
         </motion.div>
