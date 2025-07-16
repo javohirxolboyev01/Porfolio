@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaTelegramPlane, FaEnvelope, FaPhone } from "react-icons/fa";
-import avatarImg from "../assets/user1.jpgnpm ";
+import avatarImg from "../assets/user1.jpg";
 
 const textVariant = {
   hidden: { opacity: 0, y: 40 },
